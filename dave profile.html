@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>David "SeaWolf" Profile & Resume</title>
+  </head>
+  <body>
+    <h1>David SeaWolf</h1>
+    <p>Naval Officer, Nigerian Navy</p>
+    <p><em>Call Sign: SeaWolf</em></p>
+    <hr size=3 noshade>
+    <strong>professional Summary</strong>
+  <p>I am a highly skilled and dedicated Naval Officer with extensive experience serving in the Nigerian Navy. Known by the call sign "SeaWolf," I bring a wealth of expertise in maritime security, naval operations, and leadership. My training and hands-on experience have equipped me with the ability to navigate complex situations, ensure the safety of my vessel and crew, and effectively manage high-stakes environments. I am committed to the defense and security of Nigeria’s maritime boundaries and international waters, as well as continuously enhancing my technical and leadership skills.</p>
+  <hr size=3>
+<center><em><h3><a href="skills.html"> Skills</a>  <a href="experience.html"> Experience</a> <a href="training.html">Trainig</a> <a href="achievement.html"> Achievement</a></h3></em></center> 
+<hr size=3>
+
+<p><p><div class="reaction-buttons">
+    <button id="likeButton" onclick="alert('Liked!')">👍 Like</button>
+    <button id="dislikeButton" onclick="alert('Disliked!')">👎 Dislike</button>
+</div></p>
+<right>
+<p>   <div class="comment-section">
+        <h3>Leave a Comment:</h3>
+        <textarea id="userComment" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br><br>
+        <button onclick="sendToWhatsApp()">Submit Comment</button>
+    </div>
+
+    <script>
+        function sendToWhatsApp() {
+            var comment = document.getElementById('userComment').value;
+
+            if (comment) {
+                var encodedComment = encodeURIComponent(comment);
+                var whatsappUrl = "https://wa.me/+2349039630766?text=" + encodedComment
+                window.open(whatsappUrl, "_blank");
+            } else {
+                alert("Please enter a comment!");
+            }
+        }
+    </script></p></p>
+  </right>
+</body>
+</html>
